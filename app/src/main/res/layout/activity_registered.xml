@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisteredActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="欢迎注册"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="手机号:"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/register_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_phone"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="-8dp"
+        android:layout_toRightOf="@+id/tv_phone"
+        android:hint=" 请输入手机号"
+        android:singleLine="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_phone"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="密码:"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_password"
+        android:layout_marginBottom="-8dp"
+        android:layout_toRightOf="@+id/tv_password"
+        android:hint=" 填写密码(6~15位)"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/tv_retrieve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_password"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="确认密码:"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/register_retrieve_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_retrieve"
+        android:layout_marginBottom="-8dp"
+        android:layout_toRightOf="@+id/tv_retrieve"
+        android:hint=" 确认你的密码"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_retrieve"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="昵称:"
+        android:textSize="25sp" />
+
+
+    <EditText
+        android:id="@+id/register_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_name"
+        android:layout_marginBottom="-8dp"
+        android:layout_toRightOf="@+id/tv_name"
+        android:hint=" 例如:旺财"
+        android:singleLine="true"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_margin="25dp"
+        android:background="@drawable/circle_blue"
+        android:text="立即注册"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+</RelativeLayout>

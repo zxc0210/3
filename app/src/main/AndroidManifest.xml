@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".BuyActivity" />
+        <activity android:name=".AddGoodsActivity" />
+        <activity android:name=".GoodsManagerActivity" />
+        <activity android:name=".ShopActivity" />
+        <activity android:name=".MyShopActivity" />
+        <activity android:name=".AddShopActivity" />
+        <activity android:name=".PersonalInformationActivity" />
+        <activity android:name=".ChangePersonalDataActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".DrawerLayoutActivity" />
+        <activity android:name=".RetrievePasswordActivity" />
+        <activity android:name=".ForgetPasswordActivity" />
+        <activity android:name=".RegisteredActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

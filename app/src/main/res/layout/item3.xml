@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/ed_frame"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#1F1E1E"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_goods_name"
+        android:layout_marginTop="3dp"
+        android:textColor="#C92D2D"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_goods_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_goods_price"
+        android:layout_marginTop="3dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/delete_goods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_shop"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="#CFD0D1"
+        android:text="删除"
+        android:textColor="#3A3636"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".ChangePersonalDataActivity">
+
+    <TextView
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/change"
+        android:textColor="#24B6F8"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change"
+        android:layout_marginTop="10dp"
+        android:hint="@string/name"
+        android:singleLine="true"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_name"
+        android:layout_marginTop="10dp"
+        android:text="@string/gender"
+        android:textSize="25sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_name"
+        android:layout_alignBottom="@+id/gender"
+        android:layout_toRightOf="@+id/gender"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/male"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/female"
+            android:textSize="25sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_group"
+        android:layout_marginTop="5dp"
+        android:hint="@string/birthday"
+        android:singleLine="true"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/et_career"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_birthday"
+        android:layout_marginTop="10dp"
+        android:hint="@string/career"
+        android:singleLine="true"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_career"
+        android:layout_marginTop="10dp"
+        android:hint="@string/hometown"
+        android:singleLine="true"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/bt_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_address"
+        android:layout_margin="20dp"
+        android:background="@drawable/circle_blue"
+        android:text="@string/finish"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+</RelativeLayout>

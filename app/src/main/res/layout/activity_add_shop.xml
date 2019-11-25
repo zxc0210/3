@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddShopActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/add_shop"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/shop_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:onClick="onclick"
+        android:src="@mipmap/header" />
+
+    <EditText
+        android:id="@+id/et_shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shop_header"
+        android:layout_margin="10dp"
+        android:hint="@string/shop_name"
+        android:singleLine="true"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/et_shop_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_shop_name"
+        android:layout_margin="10dp"
+        android:hint="@string/shop_introduce"
+        android:singleLine="true"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/confirm_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_shop_introduce"
+        android:layout_margin="15dp"
+        android:background="@drawable/circle_blue"
+        android:text="@string/confirm_add"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+</RelativeLayout>

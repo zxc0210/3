@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="9dp"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/login_title"
+        android:textColor="#636668"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_title"
+        android:layout_marginTop="20dp"
+        android:hint="@string/hint_phone"
+        android:singleLine="true"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_phone"
+        android:layout_marginTop="10dp"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_password"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_blue"
+        android:text="@string/login"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/bt_forget_password"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_login"
+        android:text="@string/forget_password"
+        android:textColor="#11ACF1"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bt_registered"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_login"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/registered"
+        android:textColor="#11ACF1"
+        android:textSize="20sp" />
+</RelativeLayout>

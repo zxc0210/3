@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".PersonalInformationActivity">
+
+    <TextView
+        android:id="@+id/personal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/personal"
+        android:textColor="#24B6F8"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personal"
+        android:layout_marginTop="15dp"
+        android:text="@string/gender"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/gender"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender"
+        android:layout_marginTop="15dp"
+        android:text="生日:"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/birthday"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/career"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/birthday"
+        android:layout_marginTop="15dp"
+        android:text="个人简介:"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_career"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/birthday"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/career"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/career"
+        android:layout_marginTop="15dp"
+        android:text="地址:"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/career"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/address"
+        android:textSize="25sp" />
+</RelativeLayout>

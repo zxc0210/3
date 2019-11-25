@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddGoodsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary">
+
+            <TextView
+                android:id="@+id/tv_forget_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="添加商品"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/goods_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:onClick="onclick"
+        android:src="@mipmap/header" />
+
+    <EditText
+        android:id="@+id/et_goods_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/goods_header"
+        android:layout_margin="8dp"
+        android:hint="@string/goods_name"
+        android:singleLine="true"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/et_goods_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_goods_name"
+        android:layout_margin="8dp"
+        android:hint="@string/goods_price"
+        android:singleLine="true"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/et_goods_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_goods_price"
+        android:layout_margin="8dp"
+        android:layout_marginTop="15dp"
+        android:hint="@string/number"
+        android:singleLine="true"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/confirm_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_goods_number"
+        android:layout_margin="15dp"
+        android:background="@drawable/circle_blue"
+        android:text="@string/confirm_add"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/ed_frame"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/text_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="#242222"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/circle"
+        android:padding="6dp"
+        android:text="删除该店"
+        android:textColor="#2E2B2B"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/delete"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/circle"
+        android:padding="6dp"
+        android:text="管理商品"
+        android:textColor="#2E2B2B"
+        android:textSize="16sp" />
+</RelativeLayout>
